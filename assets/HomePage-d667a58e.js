@@ -1,0 +1,1 @@
+import{j as s}from"./index-fdc1dc7e.js";const e={},r=()=>s.jsx("section",{className:e.hero}),t=()=>s.jsx(s.Fragment,{children:s.jsx(r,{})}),o=()=>s.jsx(s.Fragment,{children:s.jsx(t,{})});export{o as default};
