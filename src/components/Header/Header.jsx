@@ -1,13 +1,15 @@
 import css from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className={css.header}>
-      {/* <svg className={css.logo} width="90px" height="23px">
-        <use src="../../images/sprite.svg#icon-kazka" />
-      </svg> */}
-      <a href="/" className={css.logo}></a>
-      <p className={css.menu}>MENU</p>
+      <Link>
+        <p className={css.logo}></p>
+      </Link>
+      <Link to="/menu">
+        <p className={css.menu}>MENU</p>
+      </Link>
     </header>
   );
 };
