@@ -19,7 +19,7 @@
     height: 900px;
   }
   @media screen and (min-width: 1280px) {
-    height: 1200px;
+    height: calc(100vh - 160px);
   }
 }
 
