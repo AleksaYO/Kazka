@@ -11,7 +11,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    height: 700px;
+    height: 860px;
   }
 }
 
@@ -84,7 +84,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    height: 700px;
+    height: 860px;
     background-image: url(../../images/about_desk.jpg);
   }
 }
