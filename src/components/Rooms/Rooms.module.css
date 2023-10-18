@@ -1,0 +1,178 @@
+.rooms {
+  background-color: #242f49;
+  padding: 28px 15px;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    height: 400px;
+    background-image: url(../../images/rooms/rooms_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0px 100px;
+    height: 860px;
+    background-image: url(../../images/rooms/rooms_bg-desk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.standart {
+  max-width: 450px;
+  height: 200px;
+  background-image: url(../../images/rooms/standart/standart1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid white;
+  border-radius: 30px;
+
+  @media screen and (min-width: 1280px) {
+    height: 280px;
+  }
+}
+.standart_plus {
+  max-width: 450px;
+  height: 200px;
+  background-image: url(../../images/rooms/sandart_plus/standart+.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid white;
+  border-radius: 30px;
+
+  @media screen and (min-width: 1280px) {
+    height: 280px;
+  }
+}
+.lux {
+  max-width: 450px;
+  height: 200px;
+  background-image: url(../../images/rooms/lux/lux.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid white;
+  border-radius: 30px;
+
+  @media screen and (min-width: 1280px) {
+    height: 280px;
+  }
+}
+
+.rooms_list {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    max-width: calc(100% - 80px);
+    margin: 0;
+    padding: 25px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.505);
+
+    @media screen and (min-width: 1280px) {
+      max-width: calc(100% - 200px);
+      gap: 24px;
+    }
+  }
+}
+
+.rooms_item {
+  @media screen and (min-width: 769px) {
+    width: 250px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 420px;
+    height: 280px;
+  }
+}
+
+.info_box {
+  width: 130px;
+  padding: 7px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.426);
+  border: 1px solid white;
+
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    padding: 14px;
+  }
+}
+
+.rooms_title {
+  margin: 0;
+
+  color: #fff;
+  font-family: Marck Script, cursive;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 250%;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 32px;
+    line-height: 50px; /* 156.25% */
+    letter-spacing: 1.92px;
+  }
+}
+
+.rooms_price {
+  margin: 0;
+
+  color: #fff;
+  font-family: Marck Script, cursive;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 32px;
+    line-height: 50px; /* 156.25% */
+    letter-spacing: 1.92px;
+  }
+}
