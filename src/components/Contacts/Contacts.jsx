@@ -9,7 +9,7 @@ const Contacts = () => {
             <iframe
               className={css.map}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.488683327339!2d28.48763311176063!3d49.34289857128273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d422ed8918723%3A0x1f057e3f48b7b2ab!2z0JrQsNC30LrQsA!5e0!3m2!1sru!2sua!4v1697632670753!5m2!1sru!2sua"
-              allowfullscreen=""
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
