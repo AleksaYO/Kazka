@@ -17,7 +17,7 @@
 }
 
 .spinner {
-  --size: 45px;
+  --size: 20px;
   --first-block-clr: #242f49;
   --second-block-clr: #bf2223;
   --clr: #111;
@@ -37,6 +37,10 @@
   animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
   left: 50%;
   background: var(--first-block-clr);
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .spinner::after {
