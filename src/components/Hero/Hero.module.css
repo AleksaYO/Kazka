@@ -1,5 +1,4 @@
 .hero {
-  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
   height: 400px;
   background-image: url(../../images/hero.jpg);
   background-position: center;
@@ -14,7 +13,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    height: 780px;
+    height: 860px;
     background-image: url(../../images/hero_desk.jpg);
   }
 }
