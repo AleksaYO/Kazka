@@ -1,0 +1,55 @@
+.hero {
+  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+  height: 400px;
+  background-image: url(../../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../../images/hero_tablet.jpg);
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 780px;
+    background-image: url(../../images/hero_desk.jpg);
+  }
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a66;
+  width: 322px;
+  height: 118px;
+  border: 2px solid #ddd;
+
+  @media screen and (min-width: 768px) {
+    width: 435px;
+    height: 160px;
+  }
+}
+
+.title {
+  z-index: 99999;
+  margin: 0;
+  color: #f4f4f4;
+  text-align: center;
+  font-family: Arizonia, serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.6%;
+  letter-spacing: 2.16px;
+  text-transform: capitalize;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: 2.88px;
+  }
+}
