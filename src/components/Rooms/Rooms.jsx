@@ -44,7 +44,7 @@ const Rooms = () => {
               <div className={css.lux}>
                 <div data-atropos-offset="10" className={css["info_box"]}>
                   <h3 data-atropos-offset="15" className={css["rooms_title"]}>
-                    Полу-Люкс
+                    Напівлюкс
                   </h3>
                   <p data-atropos-offset="15" className={css["rooms_price"]}>
                     1600 грн
