@@ -191,7 +191,7 @@
   justify-content: center;
 }
 
-.modal {
+/* .modal {
   border: 2px solid white;
   width: 100%;
   height: auto;
@@ -203,7 +203,7 @@
   @media screen and (min-width: 1280px) {
     width: 900px;
   }
-}
+} */
 
 .modal-list {
   margin: 0;

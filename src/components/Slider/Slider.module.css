@@ -1,0 +1,13 @@
+.modal-backdrop {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.425);
+  z-index: 81273978213769129367126;
+}
