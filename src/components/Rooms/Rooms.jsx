@@ -1,6 +1,7 @@
 import css from "./Rooms.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { lux, standart, standartPlus } from "./Katalog";
+import Slider from "../Slider/Slider";
 
 const Rooms = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,24 +26,30 @@ const Rooms = () => {
     }
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      // Получите размеры окна браузера
+      const windowHeight = window.innerHeight;
+      const windowWidth = window.innerWidth;
+
+      // Получите размеры модального окна
+      const modalHeight = document.querySelector(".modal").offsetHeight;
+      const modalWidth = document.querySelector(".modal").offsetWidth;
+
+      // Вычислите положение модального окна
+      const top = (windowHeight - modalHeight) / 2;
+      const left = (windowWidth - modalWidth) / 2;
+
+      // Установите положение модального окна
+      document.querySelector(".modal").style.top = `${top}px`;
+      document.querySelector(".modal").style.left = `${left}px`;
+    }
+  }, [isOpen]);
+
   return (
     <>
       <section className={css.rooms}>
-        {isOpen && (
-          <div onClick={onCloseModal} className={css.backdrop}>
-            <div className={css.modal}>
-              <ul className={css["modal-list"]}>
-                {images.map(({ url, key }) => {
-                  return (
-                    <li className={css["modal-item"]} key={key}>
-                      <img className={css.image} src={url} alt="img" />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </div>
-        )}
+        {isOpen && <Slider onCloseModal={onCloseModal} arr={images} />}
         <ul className={css["rooms_list"]}>
           <li id="standart" onClick={onOpenModal} className={css["rooms_item"]}>
             <div className={css.standart}>
